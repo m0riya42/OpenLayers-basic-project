@@ -86519,7 +86519,287 @@ var _hasFlag = _interopRequireDefault(require("./modules/hasFlag"));
 var _countries = _interopRequireDefault(require("./modules/countries.json"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./modules/hasFlag":"node_modules/country-flag-icons/modules/hasFlag.js","./modules/countries.json":"node_modules/country-flag-icons/modules/countries.json"}],"index.js":[function(require,module,exports) {
+},{"./modules/hasFlag":"node_modules/country-flag-icons/modules/hasFlag.js","./modules/countries.json":"node_modules/country-flag-icons/modules/countries.json"}],"utils.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.degrees_to_radians = degrees_to_radians;
+exports.isoCountries = void 0;
+
+function degrees_to_radians(degrees) {
+  var pi = Math.PI;
+  return degrees * (pi / 180);
+}
+
+var isoCountries = {
+  afghanistan: "AF",
+  "aland islands": "AX",
+  albania: "AL",
+  algeria: "DZ",
+  "american samoa": "AS",
+  andorra: "AD",
+  angola: "AO",
+  anguilla: "AI",
+  antarctica: "AQ",
+  "antigua and barbuda": "AG",
+  argentina: "AR",
+  armenia: "AM",
+  aruba: "AW",
+  australia: "AU",
+  austria: "AT",
+  azerbaijan: "AZ",
+  bahamas: "BS",
+  bahrain: "BH",
+  bangladesh: "BD",
+  barbados: "BB",
+  belarus: "BY",
+  belgium: "BE",
+  belize: "BZ",
+  benin: "BJ",
+  bermuda: "BM",
+  bhutan: "BT",
+  bolivia: "BO",
+  "bosnia and herzegovina": "BA",
+  botswana: "BW",
+  "bouvet island": "BV",
+  brazil: "BR",
+  "british indian ocean territory": "IO",
+  "brunei darussalam": "BN",
+  bulgaria: "BG",
+  "burkina faso": "BF",
+  burundi: "BI",
+  cambodia: "KH",
+  cameroon: "CM",
+  canada: "CA",
+  "cape verde": "CV",
+  "cayman islands": "KY",
+  "central african republic": "CF",
+  chad: "TD",
+  chile: "CL",
+  china: "CN",
+  "christmas island": "CX",
+  "cocos (keeling) islands": "CC",
+  colombia: "CO",
+  comoros: "KM",
+  congo: "CG",
+  "congo, democratic republic": "CD",
+  "cook islands": "CK",
+  "costa rica": "CR",
+  "cote d'ivoire": "CI",
+  croatia: "HR",
+  cuba: "CU",
+  cyprus: "CY",
+  "czech republic": "CZ",
+  denmark: "DK",
+  djibouti: "DJ",
+  dominica: "DM",
+  "dominican republic": "DO",
+  ecuador: "EC",
+  egypt: "EG",
+  "el salvador": "SV",
+  "equatorial guinea": "GQ",
+  eritrea: "ER",
+  estonia: "EE",
+  ethiopia: "ET",
+  "falkland islands": "FK",
+  "faroe islands": "FO",
+  fiji: "FJ",
+  finland: "FI",
+  france: "FR",
+  "french guiana": "GF",
+  "french polynesia": "PF",
+  "french southern territories": "TF",
+  gabon: "GA",
+  gambia: "GM",
+  georgia: "GE",
+  germany: "DE",
+  ghana: "GH",
+  gibraltar: "GI",
+  greece: "GR",
+  greenland: "GL",
+  grenada: "GD",
+  guadeloupe: "GP",
+  guam: "GU",
+  guatemala: "GT",
+  guernsey: "GG",
+  guinea: "GN",
+  "guinea-bissau": "GW",
+  guyana: "GY",
+  haiti: "HT",
+  "heard island & mcdonald islands": "HM",
+  "holy see (vatican city state)": "VA",
+  honduras: "HN",
+  "hong kong": "HK",
+  hungary: "HU",
+  iceland: "IS",
+  india: "IN",
+  indonesia: "ID",
+  "iran, islamic republic of": "IR",
+  iraq: "IQ",
+  ireland: "IE",
+  "isle of man": "IM",
+  israel: "IL",
+  italy: "IT",
+  jamaica: "JM",
+  japan: "JP",
+  jersey: "JE",
+  jordan: "JO",
+  kazakhstan: "KZ",
+  kenya: "KE",
+  kiribati: "KI",
+  "republic of korea": "KR",
+  "south korea": "KR",
+  "democratic people's republic of korea": "KP",
+  "north korea": "KP",
+  kuwait: "KW",
+  kyrgyzstan: "KG",
+  "lao people's democratic republic": "LA",
+  latvia: "LV",
+  lebanon: "LB",
+  lesotho: "LS",
+  liberia: "LR",
+  "libyan arab jamahiriya": "LY",
+  liechtenstein: "LI",
+  lithuania: "LT",
+  luxembourg: "LU",
+  macao: "MO",
+  macedonia: "MK",
+  madagascar: "MG",
+  malawi: "MW",
+  malaysia: "MY",
+  maldives: "MV",
+  mali: "ML",
+  malta: "MT",
+  "marshall islands": "MH",
+  martinique: "MQ",
+  mauritania: "MR",
+  mauritius: "MU",
+  mayotte: "YT",
+  mexico: "MX",
+  "micronesia, federated states of": "FM",
+  moldova: "MD",
+  monaco: "MC",
+  mongolia: "MN",
+  montenegro: "ME",
+  montserrat: "MS",
+  morocco: "MA",
+  mozambique: "MZ",
+  myanmar: "MM",
+  namibia: "NA",
+  nauru: "NR",
+  nepal: "NP",
+  netherlands: "NL",
+  "netherlands antilles": "AN",
+  "new caledonia": "NC",
+  "new zealand": "NZ",
+  nicaragua: "NI",
+  niger: "NE",
+  nigeria: "NG",
+  niue: "NU",
+  "norfolk island": "NF",
+  "northern mariana islands": "MP",
+  norway: "NO",
+  oman: "OM",
+  pakistan: "PK",
+  palau: "PW",
+  "palestinian territory, occupied": "PS",
+  panama: "PA",
+  "papua new guinea": "PG",
+  paraguay: "PY",
+  peru: "PE",
+  philippines: "PH",
+  pitcairn: "PN",
+  poland: "PL",
+  portugal: "PT",
+  "puerto rico": "PR",
+  qatar: "QA",
+  reunion: "RE",
+  romania: "RO",
+  "russian federation": "RU",
+  rwanda: "RW",
+  "saint barthelemy": "BL",
+  "saint helena": "SH",
+  "saint kitts and nevis": "KN",
+  "saint lucia": "LC",
+  "saint martin": "MF",
+  "saint pierre and miquelon": "PM",
+  "saint vincent and grenadines": "VC",
+  samoa: "WS",
+  "san marino": "SM",
+  "sao tome and principe": "ST",
+  "saudi arabia": "SA",
+  senegal: "SN",
+  serbia: "RS",
+  seychelles: "SC",
+  "sierra leone": "SL",
+  singapore: "SG",
+  slovakia: "SK",
+  slovenia: "SI",
+  "solomon islands": "SB",
+  somalia: "SO",
+  "south africa": "ZA",
+  "south georgia and sandwich isl.": "GS",
+  spain: "ES",
+  "sri lanka": "LK",
+  sudan: "SD",
+  suriname: "SR",
+  "svalbard and jan mayen": "SJ",
+  swaziland: "SZ",
+  sweden: "SE",
+  switzerland: "CH",
+  "syrian arab republic": "SY",
+  taiwan: "TW",
+  tajikistan: "TJ",
+  tanzania: "TZ",
+  thailand: "TH",
+  "timor-leste": "TL",
+  togo: "TG",
+  tokelau: "TK",
+  tonga: "TO",
+  "trinidad and tobago": "TT",
+  tunisia: "TN",
+  turkey: "TR",
+  turkmenistan: "TM",
+  "turks and caicos islands": "TC",
+  tuvalu: "TV",
+  uganda: "UG",
+  ukraine: "UA",
+  "united arab emirates": "AE",
+  "united kingdom": "GB",
+  "united states": "US",
+  "united states outlying islands": "UM",
+  uruguay: "UY",
+  uzbekistan: "UZ",
+  vanuatu: "VU",
+  venezuela: "VE",
+  vietnam: "VN",
+  "virgin islands, british": "VG",
+  "virgin islands, u.s.": "VI",
+  "wallis and futuna": "WF",
+  "western sahara": "EH",
+  yemen: "YE",
+  zambia: "ZM",
+  zimbabwe: "ZW"
+};
+exports.isoCountries = isoCountries;
+},{}],"images/airplane.png":[function(require,module,exports) {
+module.exports = "/airplane.d27ff85c.png";
+},{}],"images/israelIcon.png":[function(require,module,exports) {
+module.exports = "/israelIcon.fc04f2de.png";
+},{}],"images/location-pin.png":[function(require,module,exports) {
+module.exports = "/location-pin.c7fb46ce.png";
+},{}],"images/marker.png":[function(require,module,exports) {
+module.exports = "/marker.59daef38.png";
+},{}],"images/*.png":[function(require,module,exports) {
+module.exports = {
+  "airplane": require("./airplane.png"),
+  "israelIcon": require("./israelIcon.png"),
+  "location-pin": require("./location-pin.png"),
+  "marker": require("./marker.png")
+};
+},{"./airplane.png":"images/airplane.png","./israelIcon.png":"images/israelIcon.png","./location-pin.png":"images/location-pin.png","./marker.png":"images/marker.png"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("ol/ol.css");
@@ -86542,12 +86822,31 @@ var _style = require("ol/style");
 
 var _layer = require("ol/layer");
 
+var _easing = require("ol/easing");
+
+var _proj = require("ol/proj");
+
 var _render = require("ol/render");
+
+var _Observable = require("ol/Observable");
 
 var _countryFlagIcons = require("country-flag-icons");
 
+var _utils = require("./utils");
+
+var _ = _interopRequireDefault(require("./images/*.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//Convert country to code and to Flag:
+// console.log(isoCountries['israel']);
+// const flagSrc = "http://purecatamphetamine.github.io/country-flag-icons/3x2/#isoCountry#.svg"
+
+/****************************************/
+
+/*            Basic Map                 */
+
+/****************************************/
 // API key at https://www.maptiler.com/cloud/
 var key = 'GA7N1mQcvcTE7mnV8sG1';
 var attributions = '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> ' + '<a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>';
@@ -86555,17 +86854,7 @@ var mapVectorSource = new _Vector.default({
   features: []
 });
 var mapVectorLayer = new _layer.Vector({
-  source: mapVectorSource,
-  style: new _style.Style({
-    image: new _style.Icon({
-      anchor: [0.5, 46],
-      anchorXUnits: 'fraction',
-      anchorYUnits: 'pixels',
-      // src: './images/airplane.png'
-      src: 'https://openlayers.org/en/v4.6.5/examples/data/icon.png' // src: 'https://openlayers.org/en/v4.6.5/examples/data/dot.png'
-
-    })
-  })
+  source: mapVectorSource
 });
 var map = new _Map.default({
   target: document.getElementById('map'),
@@ -86573,9 +86862,9 @@ var map = new _Map.default({
     // center: center,
     center: [35.217018, 31.771959],
     projection: 'EPSG:4326',
-    zoom: 2,
-    minZoom: 2,
-    maxZoom: 19
+    zoom: 5,
+    minZoom: 1,
+    maxZoom: 20
   }),
   layers: [new _layer.Tile({
     // source: new OSM() //original map
@@ -86585,38 +86874,93 @@ var map = new _Map.default({
       tileSize: 512
     })
   }), mapVectorLayer]
-}); // map.addLayer(mapVectorLayer);
-//console.log(hasFlag('US'));
-//Israel icon:
+});
+/****************************************/
+
+/*         Israel Start Icon            */
+
+/****************************************/
 
 var startMarker = new _Feature.default({
   geometry: new _Point.default([35.217018, 31.771959])
 });
 startMarker.setStyle(new _style.Style({
   image: new _style.Icon({
-    color: 'yellow',
+    // color: 'yellow',
     crossOrigin: 'anonymous',
     anchor: [0.5, 46],
     anchorXUnits: 'fraction',
     anchorYUnits: 'pixels',
-    // src: './airplane.png'
+    // src: flagSrc.replace("#isoCountry#", isoCountries['israel']),
+    src: _.default.israelIcon // src: getUnicodeFlagIcon('US'),
     // src: '/images/israelIcon.png'
-    src: 'https://openlayers.org/en/v4.6.5/examples/data/icon.png' // src: ''            // src: './marker.png'
+    // src: 'https://openlayers.org/en/v4.6.5/examples/data/icon.png'
 
   }),
   text: new _style.Text({
-    font: '25px Calibri,sans-serif',
-    text: 'Start Point',
+    font: '15px Narkisim, bold',
+    text: 'Israel',
     fill: new _style.Fill({
-      color: 'yellow'
+      color: '#f3f3f3'
     }),
     stroke: new _style.Stroke({
-      color: 'green',
+      color: '#002986',
       width: 3
     })
   })
 }));
 mapVectorSource.addFeature(startMarker);
+/****************************************/
+
+/*         Flash Animation              */
+
+/****************************************/
+
+var duration = 3000;
+
+function flash(feature) {
+  var start = new Date().getTime();
+  var listenerKey = mapVectorLayer.on('postrender', animate);
+
+  function animate(event) {
+    var vectorContext = (0, _render.getVectorContext)(event);
+    var frameState = event.frameState;
+    var flashGeom = feature.getGeometry().clone();
+    var elapsed = frameState.time - start;
+    var elapsedRatio = elapsed / duration; // radius will be 5 at start and 30 at end.
+
+    var radius = (0, _easing.easeOut)(elapsedRatio) * 25 + 5;
+    var opacity = (0, _easing.easeOut)(1 - elapsedRatio);
+    var style = new _style.Style({
+      image: new _style.Circle({
+        radius: radius,
+        stroke: new _style.Stroke({
+          color: 'rgba(243, 243, 243, ' + opacity + ')',
+          width: 0.25 + opacity
+        })
+      })
+    });
+    vectorContext.setStyle(style);
+    vectorContext.drawGeometry(flashGeom);
+
+    if (elapsed > duration) {
+      (0, _Observable.unByKey)(listenerKey);
+      return;
+    } // tell OpenLayers to continue postrender animation
+
+
+    map.render();
+  }
+}
+
+mapVectorSource.on('addfeature', function (e) {
+  flash(e.feature);
+});
+/****************************************/
+
+/*         Request for Airplanes        */
+
+/****************************************/
 
 function requestForIsraelAirplanes() {
   var a = new Date().getTime();
@@ -86633,15 +86977,39 @@ function requestForIsraelAirplanes() {
       if (request.status === 200) {
         // console.log(request.response)
         request.response.states.forEach(function (el) {
-          if (el[2] === "Israel") {
+          if (el[2] === "Israel" && !mapVectorSource.getFeatureById(parseInt(el[0]))) {
+            // if (!mapVectorSource.getFeatureById(el[0])) {
             console.log(el);
-            var lon = el[5];
-            var lat = el[6];
-            mapVectorSource.addFeature(new _Feature.default({
-              geometry: new _Point.default([lon, lat])
-            }));
+            debugger;
+            var airplane = new _Feature.default({
+              geometry: new _Point.default([el[5], el[6]]),
+              _icao24: el[0],
+              _callsign: el[1] // id: el[0]
+
+            });
+            airplane.setId(parseInt(el[0]));
+            console.log(airplane);
+            console.log(mapVectorSource.getFeaturesAtCoordinate([el[5], el[6]])); // airplane._icao24 = el[0];
+            // airplane._callsign = el[1];
+
+            airplane.setStyle(new _style.Style({
+              image: new _style.Icon({
+                src: _.default.airplane,
+                rotation: (0, _utils.degrees_to_radians)(el[10])
+              })
+            })); // let lon = 
+            // let lat = el[6]
+
+            mapVectorSource.addFeature(airplane);
+            debugger;
+          } else {
+            //update coordinates:
+            if (mapVectorSource.getFeatureById(parseInt(el[0]))) {
+              console.log("airplane: ".concat(el[0], " updated"));
+              mapVectorSource.getFeatureById(parseInt(el[0])).getGeometry().setCoordinates([el[5], el[6]]);
+            }
           }
-        }); // if (el[2] === "Israel") {
+        });
       } else {
         console.error(request.statusText);
       }
@@ -86655,8 +87023,8 @@ function requestForIsraelAirplanes() {
   request.send(null);
 }
 
-requestForIsraelAirplanes();
-},{"ol/ol.css":"node_modules/ol/ol.css","ol/Feature":"node_modules/ol/Feature.js","ol/Map":"node_modules/ol/Map.js","ol/geom/Point":"node_modules/ol/geom/Point.js","ol/format/Polyline":"node_modules/ol/format/Polyline.js","ol/source/Vector":"node_modules/ol/source/Vector.js","ol/View":"node_modules/ol/View.js","ol/source/XYZ":"node_modules/ol/source/XYZ.js","ol/style":"node_modules/ol/style.js","ol/layer":"node_modules/ol/layer.js","ol/render":"node_modules/ol/render.js","country-flag-icons":"node_modules/country-flag-icons/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+setInterval(requestForIsraelAirplanes, 5000); // requestForIsraelAirplanes();
+},{"ol/ol.css":"node_modules/ol/ol.css","ol/Feature":"node_modules/ol/Feature.js","ol/Map":"node_modules/ol/Map.js","ol/geom/Point":"node_modules/ol/geom/Point.js","ol/format/Polyline":"node_modules/ol/format/Polyline.js","ol/source/Vector":"node_modules/ol/source/Vector.js","ol/View":"node_modules/ol/View.js","ol/source/XYZ":"node_modules/ol/source/XYZ.js","ol/style":"node_modules/ol/style.js","ol/layer":"node_modules/ol/layer.js","ol/easing":"node_modules/ol/easing.js","ol/proj":"node_modules/ol/proj.js","ol/render":"node_modules/ol/render.js","ol/Observable":"node_modules/ol/Observable.js","country-flag-icons":"node_modules/country-flag-icons/index.js","./utils":"utils.js","./images/*.png":"images/*.png"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -86684,7 +87052,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "16026" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "20526" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
