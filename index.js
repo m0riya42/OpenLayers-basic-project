@@ -3,11 +3,12 @@ import Feature from 'ol/Feature';
 import Map from 'ol/Map';
 import Point from 'ol/geom/Point';
 import Polyline from 'ol/format/Polyline';
-import VectorSource from 'ol/source/Vector';
+
 import View from 'ol/View';
 import XYZ from 'ol/source/XYZ';
 import {
     Circle as CircleStyle,
+    RegularShape,
     Fill,
     Icon,
     Stroke,
@@ -24,6 +25,17 @@ import { hasFlag } from 'country-flag-icons'
 import { countries } from 'country-flag-icons'
 import { isoCountries, degrees_to_radians } from './utils'
 import images from "./images/*.png";
+// import VectorSource from 'ol/source/Vector';
+//------------>
+import { Cluster, Stamen, Vector as VectorSource } from 'ol/source';
+import {
+    Select,
+    defaults as defaultInteractions,
+} from 'ol/interaction';
+
+import KML from 'ol/format/KML';
+import { createEmpty, extend, getHeight, getWidth } from 'ol/extent';
+
 
 
 //Convert country to code and to Flag:
@@ -41,12 +53,33 @@ var attributions =
     '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> ' +
     '<a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>';
 
+
+
 const mapVectorSource = new VectorSource({
     features: []
 })
 const mapVectorLayer = new VectorLayer({
     source: mapVectorSource,
 });
+const mapClusterSource =
+    vector = new VectorLayer({
+        source: new Cluster({
+            distance: 40,
+            source: new Cluster({
+                distance: 40,
+                source: mapVectorSource
+                // source: new VectorSource({
+                //     url: 'https://openlayers.org/en/v4.6.5/examples/data/kml/2012_Earthquakes_Mag5.kml',
+                //     format: new KML({
+                //         extractStyles: false,
+                //     }),
+                // }),
+            }),
+            // style: styleFunction,
+        }),
+    });
+
+
 const map = new Map({
     target: document.getElementById('map'),
     view: new View({
@@ -65,7 +98,17 @@ const map = new Map({
                 url: 'https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=' + key,
                 tileSize: 512,
             }),
-        }), mapVectorLayer],
+            // }), mapVectorLayer],
+        }), mapClusterSource],//, mapVectorSource],
+
+    //cluster add
+    interactions: defaultInteractions().extend([
+        new Select({
+            condition: function (evt) {
+                return evt.type == 'pointermove' || evt.type == 'singleclick';
+            },
+            style: selectStyleFunction,
+        })]),
 });
 
 
@@ -104,6 +147,196 @@ startMarker.setStyle(new Style({
 mapVectorSource.addFeature(startMarker);
 
 
+
+
+
+
+/****************************************/
+/*         Add Cluster                  */
+/****************************************/
+
+
+var earthquakeFill = new Fill({
+    color: 'rgba(255, 153, 0, 0.8)',
+});
+var earthquakeStroke = new Stroke({
+    color: 'rgba(255, 204, 0, 0.2)',
+    width: 1,
+});
+var textFill = new Fill({
+    color: '#fff',
+});
+var textStroke = new Stroke({
+    color: 'rgba(0, 0, 0, 0.6)',
+    width: 3,
+});
+var invisibleFill = new Fill({
+    color: 'rgba(255, 255, 255, 0.01)',
+});
+
+
+function createEarthquakeStyle(feature) {
+    // 2012_Earthquakes_Mag5.kml stores the magnitude of each earthquake in a
+    // standards-violating <magnitude> tag in each Placemark.  We extract it
+    // from the Placemark's name instead.
+
+    // var name = feature.get('name');
+    // var magnitude = parseFloat(name.substr(2));
+
+    var magnitude = 6;
+    var radius = 5 + 20 * (magnitude - 5);
+
+    return new Style({
+        geometry: feature.getGeometry(),
+        // image: new RegularShape({
+        //     radius1: radius,
+        //     radius2: 3,
+        //     points: 5,
+        //     angle: Math.PI,
+        //     fill: earthquakeFill,
+        //     stroke: new Stroke({
+        //         color: 'rgba(255, 204, 0, 0.2)',
+        //         width: 1,
+        //     }),
+
+        // airplane.setStyle(new Style({
+        image: new Icon({
+            src: images.airplane,
+            // rotation: degrees_to_radians(el[10]),
+        })
+        // }))
+        // }),
+    });
+}
+
+var maxFeatureCount;
+var vector = null;
+var calculateClusterInfo = function (resolution) {
+    maxFeatureCount = 0;
+    debugger
+    var features = mapClusterSource.getSource().getFeatures();
+    var feature, radius;
+    for (var i = features.length - 1; i >= 0; --i) {
+        feature = features[i];
+        debugger
+        if (feature.get('features')) {
+            var originalFeatures = feature.get('features');
+            var extent = createEmpty();
+            var j = (void 0), jj = (void 0);
+            for (j = 0, jj = originalFeatures.length; j < jj; ++j) {
+                extend(extent, originalFeatures[j].getGeometry().getExtent());
+            }
+            maxFeatureCount = Math.max(maxFeatureCount, jj);
+            radius = (0.25 * (getWidth(extent) + getHeight(extent))) / resolution;
+            feature.set('radius', radius);
+        }
+
+    }
+};
+
+var currentResolution;
+function styleFunction(feature, resolution) {
+    if (resolution != currentResolution) {
+        calculateClusterInfo(resolution);
+        currentResolution = resolution;
+    }
+    var style;
+    debugger
+    if (feature) {
+        var size = feature.get('features').length;
+        if (size > 1) {
+            style = new Style({
+                image: new Image({
+                    src: images.airplane_pack,
+                    // image: new CircleStyle({
+
+                    //     radius: feature.get('radius'),
+                    //     fill: new Fill({
+                    //         color: [255, 153, 0, Math.min(0.8, 0.4 + size / maxFeatureCount)],
+                    //     }),
+                }),
+                text: new Text({
+                    text: size.toString(),
+                    fill: textFill,
+                    stroke: textStroke,
+                }),
+            });
+        } else {
+            var originalFeature = feature.get('features')[0];
+            style = createEarthquakeStyle(originalFeature);
+        }
+        return style;
+    }
+
+}
+
+function selectStyleFunction(feature) {
+    debugger
+    var styles = [
+        new Style({
+            image: new CircleStyle({
+                radius: feature.get('radius'),
+                fill: invisibleFill,
+                // }),
+
+                // airplane.setStyle(new Style({
+                // image: new Icon({
+                //     src: images.airplane,
+                // rotation: degrees_to_radians(el[10]),
+            })
+            // }))
+        })];
+    debugger
+    if (feature.get('features')) {
+        var originalFeatures = feature.get('features');
+        var originalFeature;
+        for (var i = originalFeatures.length - 1; i >= 0; --i) {
+            originalFeature = originalFeatures[i];
+            styles.push(createEarthquakeStyle(originalFeature));
+        }
+    }
+
+    return styles;
+}
+
+// vector = new VectorLayer({
+//     source: new Cluster({
+//         distance: 40,
+//         source: mapVectorSource
+//         // source: new VectorSource({
+//         //     url: 'https://openlayers.org/en/v4.6.5/examples/data/kml/2012_Earthquakes_Mag5.kml',
+//         //     format: new KML({
+//         //         extractStyles: false,
+//         //     }),
+//         // }),
+//     }),
+//     style: styleFunction,
+// // });
+
+// var raster = new TileLayer({
+//     source: new Stamen({
+//         layer: 'toner',
+//     }),
+// });
+
+
+// var map = new Map({
+//     layers: [raster, vector],
+//     interactions: defaultInteractions().extend([
+//         new Select({
+//             condition: function (evt) {
+//                 return evt.type == 'pointermove' || evt.type == 'singleclick';
+//             },
+//             style: selectStyleFunction,
+//         })]),
+//     target: 'map',
+//     view: new View({
+//         center: [0, 0],
+//         zoom: 2,
+//     }),
+// });
+// debugger;
+// console.log(map)
 
 /****************************************/
 /*         Flash Animation              */
@@ -174,7 +407,7 @@ function requestForIsraelAirplanes() {
                     if (el[2] === "Israel" && !mapVectorSource.getFeatureById(parseInt(el[0]))) {
                         // if (!mapVectorSource.getFeatureById(el[0])) {
                         console.log(el);
-                        debugger
+                        // debugger
                         let airplane = new Feature({
                             geometry: new Point([el[5], el[6]]),
                             _icao24: el[0],
@@ -187,16 +420,19 @@ function requestForIsraelAirplanes() {
 
                         // airplane._icao24 = el[0];
                         // airplane._callsign = el[1];
-                        airplane.setStyle(new Style({
-                            image: new Icon({
-                                src: images.airplane,
-                                rotation: degrees_to_radians(el[10]),
-                            })
-                        }))
+
+                        //cluster: styleFunction
+                        airplane.setStyle(styleFunction());
+                        // airplane.setStyle(new Style({
+                        //     image: new Icon({
+                        //         src: images.airplane,
+                        //         rotation: degrees_to_radians(el[10]),
+                        //     })
+                        // }))
                         // let lon = 
                         // let lat = el[6]
                         mapVectorSource.addFeature(airplane)
-                        debugger
+                        // debugger
                     }
                     else { //update coordinates:
                         if (mapVectorSource.getFeatureById(parseInt(el[0]))) {
@@ -216,6 +452,6 @@ function requestForIsraelAirplanes() {
     request.send(null);
 }
 
-setInterval(requestForIsraelAirplanes, 5000);
+// setInterval(requestForIsraelAirplanes, 5000);
 
-// requestForIsraelAirplanes();
+requestForIsraelAirplanes();
