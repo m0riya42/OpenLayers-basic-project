@@ -86810,6 +86810,8 @@ var _Map = _interopRequireDefault(require("ol/Map"));
 
 var _Point = _interopRequireDefault(require("ol/geom/Point"));
 
+var _Polygon = _interopRequireDefault(require("ol/geom/Polygon"));
+
 var _Polyline = _interopRequireDefault(require("ol/format/Polyline"));
 
 var _Vector = _interopRequireDefault(require("ol/source/Vector"));
@@ -86838,6 +86840,8 @@ var _ = _interopRequireDefault(require("./images/*.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import { } from './ol-ext.css'
+// import { Transform } from 'ol-ext';
 //Convert country to code and to Flag:
 // console.log(isoCountries['israel']);
 // const flagSrc = "http://purecatamphetamine.github.io/country-flag-icons/3x2/#isoCountry#.svg"
@@ -86875,6 +86879,18 @@ var map = new _Map.default({
     })
   }), mapVectorLayer]
 });
+map.on('singleclick', function (event) {
+  // getData(event.coordinate);
+  map.forEachFeatureAtPixel(event.pixel, function (feature, layer) {
+    console.log(feature); // getData(feature.getProperties());
+    // getData(layer.getProperties());
+  }, {
+    hitTolerance: 5
+  });
+});
+var polygonFeature = new _Feature.default(new _Polygon.default([[[32.3254, 34.2654], [32.625, 31.654], [33.654, 32.123]]]));
+polygonFeature._isId = "yes";
+mapVectorLayer.getSource().addFeature(polygonFeature);
 /****************************************/
 
 /*         Israel Start Icon            */
@@ -86977,8 +86993,8 @@ function requestForIsraelAirplanes() {
       if (request.status === 200) {
         // console.log(request.response)
         request.response.states.forEach(function (el) {
-          if (el[2] === "Israel" && !mapVectorSource.getFeatureById(parseInt(el[0]))) {
-            // if (!mapVectorSource.getFeatureById(el[0])) {
+          // if (el[2] === "Israel" && !mapVectorSource.getFeatureById(parseInt(el[0]))) {
+          if (!mapVectorSource.getFeatureById(el[0])) {
             console.log(el);
             debugger;
             var airplane = new _Feature.default({
@@ -87024,7 +87040,7 @@ function requestForIsraelAirplanes() {
 }
 
 setInterval(requestForIsraelAirplanes, 5000); // requestForIsraelAirplanes();
-},{"ol/ol.css":"node_modules/ol/ol.css","ol/Feature":"node_modules/ol/Feature.js","ol/Map":"node_modules/ol/Map.js","ol/geom/Point":"node_modules/ol/geom/Point.js","ol/format/Polyline":"node_modules/ol/format/Polyline.js","ol/source/Vector":"node_modules/ol/source/Vector.js","ol/View":"node_modules/ol/View.js","ol/source/XYZ":"node_modules/ol/source/XYZ.js","ol/style":"node_modules/ol/style.js","ol/layer":"node_modules/ol/layer.js","ol/easing":"node_modules/ol/easing.js","ol/proj":"node_modules/ol/proj.js","ol/render":"node_modules/ol/render.js","ol/Observable":"node_modules/ol/Observable.js","country-flag-icons":"node_modules/country-flag-icons/index.js","./utils":"utils.js","./images/*.png":"images/*.png"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"ol/ol.css":"node_modules/ol/ol.css","ol/Feature":"node_modules/ol/Feature.js","ol/Map":"node_modules/ol/Map.js","ol/geom/Point":"node_modules/ol/geom/Point.js","ol/geom/Polygon":"node_modules/ol/geom/Polygon.js","ol/format/Polyline":"node_modules/ol/format/Polyline.js","ol/source/Vector":"node_modules/ol/source/Vector.js","ol/View":"node_modules/ol/View.js","ol/source/XYZ":"node_modules/ol/source/XYZ.js","ol/style":"node_modules/ol/style.js","ol/layer":"node_modules/ol/layer.js","ol/easing":"node_modules/ol/easing.js","ol/proj":"node_modules/ol/proj.js","ol/render":"node_modules/ol/render.js","ol/Observable":"node_modules/ol/Observable.js","country-flag-icons":"node_modules/country-flag-icons/index.js","./utils":"utils.js","./images/*.png":"images/*.png"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -87052,7 +87068,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "20526" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56239" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

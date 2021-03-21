@@ -2,6 +2,7 @@ import 'ol/ol.css';
 import Feature from 'ol/Feature';
 import Map from 'ol/Map';
 import Point from 'ol/geom/Point';
+import Polygon from 'ol/geom/Polygon';
 import Polyline from 'ol/format/Polyline';
 import VectorSource from 'ol/source/Vector';
 import View from 'ol/View';
@@ -24,6 +25,9 @@ import { hasFlag } from 'country-flag-icons'
 import { countries } from 'country-flag-icons'
 import { isoCountries, degrees_to_radians } from './utils'
 import images from "./images/*.png";
+// import { } from './ol-ext.css'
+// import { Transform } from 'ol-ext';
+
 
 
 //Convert country to code and to Flag:
@@ -68,6 +72,20 @@ const map = new Map({
         }), mapVectorLayer],
 });
 
+map.on('singleclick', function (event) {
+    // getData(event.coordinate);
+    map.forEachFeatureAtPixel(event.pixel, function (feature, layer) {
+        console.log(feature);
+        // getData(feature.getProperties());
+        // getData(layer.getProperties());
+    }, {
+        hitTolerance: 5
+    });
+});
+
+const polygonFeature = new Feature(new Polygon([[[32.3254, 34.2654], [32.625, 31.654], [33.654, 32.123]]]));
+polygonFeature._isId = "yes";
+mapVectorLayer.getSource().addFeature(polygonFeature);
 
 /****************************************/
 /*         Israel Start Icon            */
@@ -171,8 +189,8 @@ function requestForIsraelAirplanes() {
             if (request.status === 200) {
                 // console.log(request.response)
                 request.response.states.forEach((el) => {
-                    if (el[2] === "Israel" && !mapVectorSource.getFeatureById(parseInt(el[0]))) {
-                        // if (!mapVectorSource.getFeatureById(el[0])) {
+                    // if (el[2] === "Israel" && !mapVectorSource.getFeatureById(parseInt(el[0]))) {
+                    if (!mapVectorSource.getFeatureById(el[0])) {
                         console.log(el);
                         debugger
                         let airplane = new Feature({
