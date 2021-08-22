@@ -7,6 +7,7 @@ import Polyline from 'ol/format/Polyline';
 import VectorSource from 'ol/source/Vector';
 import View from 'ol/View';
 import XYZ from 'ol/source/XYZ';
+import { OSM } from 'ol/source'
 import {
     Circle as CircleStyle,
     Fill,
@@ -25,6 +26,7 @@ import { hasFlag } from 'country-flag-icons'
 import { countries } from 'country-flag-icons'
 import { isoCountries, degrees_to_radians } from './utils'
 import images from "./images/*.png";
+import { mapTilerAPI_key } from './config'
 // import { } from './ol-ext.css'
 // import { Transform } from 'ol-ext';
 
@@ -40,9 +42,8 @@ import images from "./images/*.png";
 /****************************************/
 
 // API key at https://www.maptiler.com/cloud/
-var key = 'GA7N1mQcvcTE7mnV8sG1';
-var attributions =
-    '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> ' +
+var key = mapTilerAPI_key;
+var attributions = '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> ' +
     '<a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>';
 
 const mapVectorSource = new VectorSource({
@@ -64,11 +65,11 @@ const map = new Map({
     layers: [
         new TileLayer({
             // source: new OSM() //original map
-            source: new XYZ({
+            source: key ? new XYZ({
                 attributions: attributions,
                 url: 'https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=' + key,
                 tileSize: 512,
-            }),
+            }) : new OSM(),
         }), mapVectorLayer],
 });
 
@@ -83,9 +84,9 @@ map.on('singleclick', function (event) {
     });
 });
 
-const polygonFeature = new Feature(new Polygon([[[32.3254, 34.2654], [32.625, 31.654], [33.654, 32.123]]]));
-polygonFeature._isId = "yes";
-mapVectorLayer.getSource().addFeature(polygonFeature);
+// const polygonFeature = new Feature(new Polygon([[[32.3254, 34.2654], [32.625, 31.654], [33.654, 32.123]]]));
+// polygonFeature._isId = "yes";
+// mapVectorLayer.getSource().addFeature(polygonFeature);
 
 /****************************************/
 /*         Israel Start Icon            */
