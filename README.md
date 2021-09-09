@@ -1,4 +1,4 @@
-# OpenLayerProject
+# OpenLayers Project
 ## Displaying Icons of Airplanes on OpenLayer's map
 
 Basic project in order to learn how to display icons on OpenLayers Map and in particular displaying icons of airplanes on real-time.
