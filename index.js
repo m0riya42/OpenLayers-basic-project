@@ -242,31 +242,31 @@ function styleFunction(feature, resolution) {
     }
     var style;
     debugger
-    if (feature) {
-        var size = feature.get('features').length;
-        if (size > 1) {
-            style = new Style({
-                image: new Image({
-                    src: images.airplane_pack,
-                    // image: new CircleStyle({
+    // if (feature) {
+    var size = feature.get('features').length;
+    if (size > 1) {
+        style = new Style({
+            image: new Image({
+                src: images.airplane_pack,
+                // image: new CircleStyle({
 
-                    //     radius: feature.get('radius'),
-                    //     fill: new Fill({
-                    //         color: [255, 153, 0, Math.min(0.8, 0.4 + size / maxFeatureCount)],
-                    //     }),
-                }),
-                text: new Text({
-                    text: size.toString(),
-                    fill: textFill,
-                    stroke: textStroke,
-                }),
-            });
-        } else {
-            var originalFeature = feature.get('features')[0];
-            style = createEarthquakeStyle(originalFeature);
-        }
-        return style;
+                //     radius: feature.get('radius'),
+                //     fill: new Fill({
+                //         color: [255, 153, 0, Math.min(0.8, 0.4 + size / maxFeatureCount)],
+                //     }),
+            }),
+            text: new Text({
+                text: size.toString(),
+                fill: textFill,
+                stroke: textStroke,
+            }),
+        });
+    } else {
+        var originalFeature = feature.get('features')[0];
+        style = createEarthquakeStyle(originalFeature);
     }
+    return style;
+    // }
 
 }
 
@@ -422,7 +422,10 @@ function requestForIsraelAirplanes() {
                         // airplane._callsign = el[1];
 
                         //cluster: styleFunction
-                        airplane.setStyle(styleFunction());
+                        debugger
+                        let newStyle = styleFunction()
+
+                        airplane.setStyle(newStyle);
                         // airplane.setStyle(new Style({
                         //     image: new Icon({
                         //         src: images.airplane,

@@ -1,0 +1,1163 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Visualizer https://www.gpsvisualizer.com/" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<wpt lat="31.182882" lon="34.811615">
+  <name>israel</name>
+  <desc>IL</desc>
+</wpt>
+<wpt lat="39.390897" lon="-99.066067">
+  <name>United States</name>
+  <desc>US</desc>
+</wpt>
+<wpt lat="-28.741699" lon="24.759501">
+  <name>South Africa</name>
+  <desc>ZA</desc>
+</wpt>
+<wpt lat="54.0" lon="-2.0">
+  <name>United Kingdom</name>
+  <desc>GB</desc>
+</wpt>
+<wpt lat="65.067703" lon="116.8564">
+  <name>Russia</name>
+  <desc>RU</desc>
+</wpt>
+<wpt lat="15.0086" lon="100.955704">
+  <name>Thailand</name>
+  <desc>TH</desc>
+</wpt>
+<wpt lat="56.511018" lon="-105.908203">
+  <name>Canada</name>
+  <desc>CA</desc>
+</wpt>
+<wpt lat="-25.0" lon="134.0">
+  <name>Australia</name>
+  <desc>AU</desc>
+</wpt>
+<wpt lat="1.290453" lon="103.852038">
+  <name>Singapore</name>
+  <desc>Singapore, SG</desc>
+</wpt>
+<wpt lat="50.641949" lon="4.659539">
+  <name>Belgium</name>
+  <desc>BE</desc>
+</wpt>
+<wpt lat="19.43253" lon="-99.13321">
+  <name>Mexico</name>
+  <desc>Mexico City, DIF, MX</desc>
+</wpt>
+<wpt lat="40.93" lon="-3.4">
+  <name>Spain</name>
+  <desc>ES</desc>
+</wpt>
+<wpt lat="46.623974" lon="2.462247">
+  <name>France</name>
+  <desc>FR</desc>
+</wpt>
+<wpt lat="23.341" lon="52.9063">
+  <name>United Arab Emirates</name>
+  <desc>AE</desc>
+</wpt>
+<wpt lat="36.635601" lon="127.500603">
+  <name>Republic of Korea</name>
+  <desc>KR</desc>
+</wpt>
+<wpt lat="31.474501" lon="70.770103">
+  <name>Pakistan</name>
+  <desc>PK</desc>
+</wpt>
+<wpt lat="28.046301" lon="16.366501">
+  <name>Libya</name>
+  <desc>LY</desc>
+</wpt>
+<wpt lat="13.4752" lon="-15.309">
+  <name>Gambia</name>
+  <desc>GM</desc>
+</wpt>
+<wpt lat="7.6869" lon="-5.6958">
+  <name>Ivory Coast</name>
+  <desc>CI</desc>
+</wpt>
+<wpt lat="49.024101" lon="31.400038">
+  <name>Ukraine</name>
+  <desc>UA</desc>
+</wpt>
+<wpt lat="-0.6818" lon="25.458599">
+  <name>Democratic Republic of the Congo</name>
+  <desc>CD</desc>
+</wpt>
+<wpt lat="32.028599" lon="54.490398">
+  <name>Iran</name>
+  <desc>IR</desc>
+</wpt>
+<wpt lat="64.524025" lon="26.287458">
+  <name>Finland</name>
+  <desc>FI</desc>
+</wpt>
+<wpt lat="-10.861639" lon="-53.104038">
+  <name>Brazil</name>
+  <desc>BR</desc>
+</wpt>
+<wpt lat="3.904655" lon="-73.076401">
+  <name>Colombia</name>
+  <desc>CO</desc>
+</wpt>
+<wpt lat="49.75504" lon="6.11149">
+  <name>AEROCENTER</name>
+  <desc>Rue de la Gare, Mersch, Mersch, LU</desc>
+</wpt>
+<wpt lat="8.3446" lon="-1.0442">
+  <name>Ghana</name>
+  <desc>GH</desc>
+</wpt>
+<wpt lat="1.7563" lon="37.636902">
+  <name>Kenya</name>
+  <desc>KE</desc>
+</wpt>
+<wpt lat="10.634326" lon="-85.441093">
+  <name>Liberia</name>
+  <desc>Liberia, GUANACASTE, CR</desc>
+</wpt>
+<wpt lat="8.148099" lon="1.034999">
+  <name>Togo</name>
+  <desc>TG</desc>
+</wpt>
+<wpt lat="4.9884" lon="46.470299">
+  <name>Somali Republic</name>
+  <desc>SO</desc>
+</wpt>
+<wpt lat="30.0348" lon="-8.1155">
+  <name>Morocco</name>
+  <desc>MA</desc>
+</wpt>
+<wpt lat="64.33905" lon="-119.61895">
+  <name>Canadian Territories</name>
+  <desc>NT, CA</desc>
+</wpt>
+<wpt lat="18.898577" lon="-70.496437">
+  <name>Dominican Republic</name>
+  <desc>DO</desc>
+</wpt>
+<wpt lat="36.652302" lon="138.192093">
+  <name>Japan</name>
+  <desc>JP</desc>
+</wpt>
+<wpt lat="42.651242" lon="-73.755418">
+  <name>Albania</name>
+  <desc>Albany, Albany County, NY, US</desc>
+</wpt>
+<wpt lat="8.7006" lon="8.5172">
+  <name>Nigeria</name>
+  <desc>NG</desc>
+</wpt>
+<wpt lat="51.090614" lon="10.382207">
+  <name>Germany</name>
+  <desc>DE</desc>
+</wpt>
+<wpt lat="46.120007" lon="14.82387">
+  <name>Slovenia</name>
+  <desc>SI</desc>
+</wpt>
+<wpt lat="49.73859" lon="15.335233">
+  <name>Czech Republic</name>
+  <desc>CZ</desc>
+</wpt>
+<wpt lat="10.7757" lon="2.6937">
+  <name>Benin</name>
+  <desc>BJ</desc>
+</wpt>
+<wpt lat="39.390897" lon="-99.066067">
+  <name>AEROCESAR</name>
+  <desc>US</desc>
+</wpt>
+<wpt lat="39.478577" lon="22.591492">
+  <name>Greece</name>
+  <desc>GR</desc>
+</wpt>
+<wpt lat="-35.288689" lon="-71.231911">
+  <name>Chile</name>
+  <desc>CL</desc>
+</wpt>
+<wpt lat="-5.6088" lon="34.5294">
+  <name>Tanzania</name>
+  <desc>TZ</desc>
+</wpt>
+<wpt lat="-16.71007" lon="-64.665314">
+  <name>Bolivia</name>
+  <desc>BO</desc>
+</wpt>
+<wpt lat="43.524673" lon="12.1605">
+  <name>Italy</name>
+  <desc>IT</desc>
+</wpt>
+<wpt lat="62.835373" lon="16.742456">
+  <name>Sweden</name>
+  <desc>SE</desc>
+</wpt>
+<wpt lat="-35.189907" lon="-65.143982">
+  <name>Argentina</name>
+  <desc>AR</desc>
+</wpt>
+<wpt lat="8.3199" lon="-11.2615">
+  <name>Sierra Leone</name>
+  <desc>SL</desc>
+</wpt>
+<wpt lat="-0.7366" lon="113.485001">
+  <name>Indonesia</name>
+  <desc>ID</desc>
+</wpt>
+<wpt lat="15.2533" lon="-14.1605">
+  <name>Senegal</name>
+  <desc>SN</desc>
+</wpt>
+<wpt lat="33.513199" lon="65.664803">
+  <name>Afghanistan</name>
+  <desc>AF</desc>
+</wpt>
+<wpt lat="1.4542" lon="32.777599">
+  <name>Uganda</name>
+  <desc>UG</desc>
+</wpt>
+<wpt lat="44.165581" lon="17.791399">
+  <name>Bosnia and Herzegovina</name>
+  <desc>BA</desc>
+</wpt>
+<wpt lat="-0.8403" lon="12.5313">
+  <name>Gabon</name>
+  <desc>GA</desc>
+</wpt>
+<wpt lat="-12.2971" lon="17.2801">
+  <name>Angola</name>
+  <desc>AO</desc>
+</wpt>
+<wpt lat="42.036598" lon="63.279099">
+  <name>Uzbekistan</name>
+  <desc>UZ</desc>
+</wpt>
+<wpt lat="-22.563801" lon="17.0804">
+  <name>Namibia</name>
+  <desc>NA</desc>
+</wpt>
+<wpt lat="38.989273" lon="35.43446">
+  <name>Turkey</name>
+  <desc>TR</desc>
+</wpt>
+<wpt lat="16.7603" lon="106.656601">
+  <name>Vietnam</name>
+  <desc>VN</desc>
+</wpt>
+<wpt lat="-13.1159" lon="27.446899">
+  <name>Zambia</name>
+  <desc>ZM</desc>
+</wpt>
+<wpt lat="7.159467" lon="-66.245689">
+  <name>Venezuela</name>
+  <desc>VE</desc>
+</wpt>
+<wpt lat="26.317301" lon="29.0548">
+  <name>Egypt</name>
+  <desc>EG</desc>
+</wpt>
+<wpt lat="53.177616" lon="-8.14161">
+  <name>Ireland</name>
+  <desc>IE</desc>
+</wpt>
+<wpt lat="46.801807" lon="8.235422">
+  <name>Switzerland</name>
+  <desc>CH</desc>
+</wpt>
+<wpt lat="43.871162" lon="20.603973">
+  <name>Serbia</name>
+  <desc>RS</desc>
+</wpt>
+<wpt lat="-9.175354" lon="-74.361778">
+  <name>Peru</name>
+  <desc>PE</desc>
+</wpt>
+<wpt lat="48.708149" lon="19.493172">
+  <name>Slovakia</name>
+  <desc>SK</desc>
+</wpt>
+<wpt lat="56.032433" lon="9.317246">
+  <name>Denmark</name>
+  <desc>DK</desc>
+</wpt>
+<wpt lat="40.237228" lon="48.962463">
+  <name>Azerbaijan</name>
+  <desc>AZ</desc>
+</wpt>
+<wpt lat="40.96024" lon="-78.92423">
+  <name>AIRPORT HELICOPTER</name>
+  <desc>Airport Road, Punxsutawney, PA, US</desc>
+</wpt>
+<wpt lat="22.264412" lon="114.167061">
+  <name>Hong Kong</name>
+  <desc>Hong Kong, HONG KONG, HK</desc>
+</wpt>
+<wpt lat="45.133049" lon="16.397858">
+  <name>Croatia</name>
+  <desc>HR</desc>
+</wpt>
+<wpt lat="47.166401" lon="19.413937">
+  <name>Hungary</name>
+  <desc>HU</desc>
+</wpt>
+<wpt lat="58.684872" lon="25.840622">
+  <name>Estonia</name>
+  <desc>EE</desc>
+</wpt>
+<wpt lat="-26.493601" lon="31.297701">
+  <name>Swaziland</name>
+  <desc>SZ</desc>
+</wpt>
+<wpt lat="27.0858" lon="80.314003">
+  <name>India</name>
+  <desc>IN</desc>
+</wpt>
+<wpt lat="-21.087161" lon="55.593724">
+  <name>Reunion</name>
+  <desc>LA RÉUNION, RE</desc>
+</wpt>
+<wpt lat="64.990005" lon="-18.59289">
+  <name>Iceland</name>
+  <desc>IS</desc>
+</wpt>
+<wpt lat="31.182882" lon="34.811615">
+  <name>Israel</name>
+  <desc>IL</desc>
+</wpt>
+<wpt lat="47.586853" lon="14.141437">
+  <name>Austria</name>
+  <desc>AT</desc>
+</wpt>
+<wpt lat="18.156088" lon="-77.310661">
+  <name>Jamaica</name>
+  <desc>JM</desc>
+</wpt>
+<wpt lat="35.902241" lon="14.413739">
+  <name>Malta</name>
+  <desc>MALTA, MT</desc>
+</wpt>
+<wpt lat="39.687378" lon="-7.963023">
+  <name>Portugal</name>
+  <desc>PT</desc>
+</wpt>
+<wpt lat="35.05386" lon="33.239326">
+  <name>Cyprus</name>
+  <desc>CY</desc>
+</wpt>
+<wpt lat="50.5093" lon="64.914497">
+  <name>Kazakhstan</name>
+  <desc>KZ</desc>
+</wpt>
+<wpt lat="41.224899" lon="75.829803">
+  <name>Kyrgyzstan</name>
+  <desc>KG</desc>
+</wpt>
+<wpt lat="37.9426" lon="58.384998">
+  <name>Turkmenistan</name>
+  <desc>TM</desc>
+</wpt>
+<wpt lat="-2.8497" lon="-171.623795">
+  <name>Kiribati</name>
+  <desc>KI</desc>
+</wpt>
+<wpt lat="12.4425" lon="104.733704">
+  <name>Cambodia</name>
+  <desc>KH</desc>
+</wpt>
+<wpt lat="12.185669" lon="-68.96859">
+  <name>Netherlands Antilles</name>
+  <desc>AN</desc>
+</wpt>
+<wpt lat="0.2306" lon="6.5853">
+  <name>Sao Tome and Principe</name>
+  <desc>ST</desc>
+</wpt>
+<wpt lat="39.390897" lon="-99.066067">
+  <name>ALNACIONAL</name>
+  <desc>US</desc>
+</wpt>
+<wpt lat="55.335629" lon="23.908211">
+  <name>Lithuania</name>
+  <desc>LT</desc>
+</wpt>
+<wpt lat="-0.6022" lon="73.084198">
+  <name>Maldives</name>
+  <desc>MV</desc>
+</wpt>
+<wpt lat="-13.2942" lon="34.419399">
+  <name>Malawi</name>
+  <desc>MW</desc>
+</wpt>
+<wpt lat="47.20573" lon="28.471676">
+  <name>Moldova</name>
+  <desc>MD</desc>
+</wpt>
+<wpt lat="42.700001" lon="19.1">
+  <name>Montenegro</name>
+  <desc>ME</desc>
+</wpt>
+<wpt lat="22.191951" lon="113.538122">
+  <name>Macao</name>
+  <desc>MACAU, MO</desc>
+</wpt>
+<wpt lat="-4.5833" lon="55.666698">
+  <name>Seychelles</name>
+  <desc>SC</desc>
+</wpt>
+<wpt lat="42.760147" lon="25.241814">
+  <name>Bulgaria</name>
+  <desc>BG</desc>
+</wpt>
+<wpt lat="-7.2086" lon="144.258698">
+  <name>Papua New Guinea</name>
+  <desc>PG</desc>
+</wpt>
+<wpt lat="56.854328" lon="24.931015">
+  <name>Latvia</name>
+  <desc>LV</desc>
+</wpt>
+<wpt lat="35.423337" lon="-113.808767">
+  <name>ANTARES</name>
+  <desc>Antares, Mohave County, AZ, US</desc>
+</wpt>
+<wpt lat="5.57826" lon="-0.2196">
+  <name>AVINOR</name>
+  <desc>Avenor Link, Accra, Greater Accra, GH</desc>
+</wpt>
+<wpt lat="-43.9674" lon="170.489395">
+  <name>New Zealand</name>
+  <desc>NZ</desc>
+</wpt>
+<wpt lat="40.06754" lon="-82.36207">
+  <name>ALCON</name>
+  <desc>Alcon Drive, Newark, OH, US</desc>
+</wpt>
+<wpt lat="46.18907" lon="-123.8347">
+  <name>ASTORIA</name>
+  <desc>Astoria, Clatsop County, OR, US</desc>
+</wpt>
+<wpt lat="30.11319" lon="31.30086">
+  <name>COMPANY AS</name>
+  <desc>Egyptian German Company For Electric Productions-Agimak Fence &amp; El Shaikh Ibrahim, Cairo, Cairo, EG</desc>
+</wpt>
+<wpt lat="15.8564" lon="121.131104">
+  <name>Philippines</name>
+  <desc>PH</desc>
+</wpt>
+<wpt lat="38.5529" lon="-76.05434">
+  <name>AIRPAC</name>
+  <desc>Airpax Road, Cambridge, MD, US</desc>
+</wpt>
+<wpt lat="38.73844" lon="-90.36635">
+  <name>AIRFLIGHT</name>
+  <desc>Airflight Drive, MO, US</desc>
+</wpt>
+<wpt lat="30.09029" lon="31.1873">
+  <name>ASA PESADA</name>
+  <desc>Harat Mahmoud Mis'idah &amp; al-Shaheed Ahmad Fahmi, al-Jeezah, al-Jeezah, EG</desc>
+</wpt>
+<wpt lat="46.12341" lon="5.81171">
+  <name>AIR PRINT</name>
+  <desc>Rond-Point Bel-Air, Valserhône, Auvergne-Rhône-Alpes, FR</desc>
+</wpt>
+<wpt lat="49.19467" lon="2.538203">
+  <name>APPALACHIAN</name>
+  <desc>Avilly-Saint-Léonard, Oise, FR</desc>
+</wpt>
+<wpt lat="61.21658" lon="-149.90675">
+  <name>ALASKA PACIFIC</name>
+  <desc>Pacific Place, Anchorage, AK, US</desc>
+</wpt>
+<wpt lat="39.390897" lon="-99.066067">
+  <name>AEROPERLAS</name>
+  <desc>US</desc>
+</wpt>
+<wpt lat="39.390897" lon="-99.066067">
+  <name>AEROPUMA</name>
+  <desc>US</desc>
+</wpt>
+<wpt lat="39.767904" lon="-74.892338">
+  <name>ATCO</name>
+  <desc>Atco, Camden County, NJ, US</desc>
+</wpt>
+<wpt lat="39.390897" lon="-99.066067">
+  <name>AVIOQUINTANA</name>
+  <desc>US</desc>
+</wpt>
+<wpt lat="12.5" lon="-69.977501">
+  <name>Aruba</name>
+  <desc>AW</desc>
+</wpt>
+<wpt lat="-30.0" lon="135.0">
+  <name>S.A.</name>
+  <desc>SA, AU</desc>
+</wpt>
+<wpt lat="50.448071" lon="-119.193774">
+  <name>ARMSTRONG</name>
+  <desc>Armstrong, BC, CA</desc>
+</wpt>
+<wpt lat="4.536307" lon="-75.672375">
+  <name>Armenia</name>
+  <desc>Armenia, QUINDÍO, CO</desc>
+</wpt>
+<wpt lat="-34.60903" lon="-58.37322">
+  <name>AIREX</name>
+  <desc>Buenos Aires, AR</desc>
+</wpt>
+<wpt lat="14.0228" lon="18.520599">
+  <name>Chad</name>
+  <desc>TD</desc>
+</wpt>
+<wpt lat="63.631126" lon="-151.631889">
+  <name>ALASKA</name>
+  <desc>AK, US</desc>
+</wpt>
+<wpt lat="38.23826" lon="-93.17614">
+  <name>SCHEFF</name>
+  <desc>Scheff Place, Edwards, MO, US</desc>
+</wpt>
+<wpt lat="-34.83613" lon="-56.00201">
+  <name>AEROSUN</name>
+  <desc>Avenida Aerosur, Ciudad de la Costa, Canelones, UY</desc>
+</wpt>
+<wpt lat="39.60295" lon="-77.68782">
+  <name>ALL STAR</name>
+  <desc>All Star Court, Hagerstown, MD, US</desc>
+</wpt>
+<wpt lat="39.53567" lon="-76.34847">
+  <name>AIR CLASS</name>
+  <desc>Bel Air, MD, US</desc>
+</wpt>
+<wpt lat="28.1553" lon="84.196503">
+  <name>Nepal</name>
+  <desc>NP</desc>
+</wpt>
+<wpt lat="13.178" lon="30.231001">
+  <name>Sudan</name>
+  <desc>SD</desc>
+</wpt>
+<wpt lat="8.970743" lon="-79.534454">
+  <name>Panama</name>
+  <desc>Panama, PA</desc>
+</wpt>
+<wpt lat="12.0673" lon="-14.941">
+  <name>Guinea-Bissau</name>
+  <desc>GW</desc>
+</wpt>
+<wpt lat="59.583302" lon="-133.716599">
+  <name>ATLANTIS CANADA</name>
+  <desc>Atlin, BC, CA</desc>
+</wpt>
+<wpt lat="12.3616" lon="-1.5377">
+  <name>Burkina Faso</name>
+  <desc>BF</desc>
+</wpt>
+<wpt lat="52.270329" lon="5.614606">
+  <name>Netherlands</name>
+  <desc>NL</desc>
+</wpt>
+<wpt lat="-1.454042" lon="-78.36792">
+  <name>Ecuador</name>
+  <desc>EC</desc>
+</wpt>
+<wpt lat="43.30973" lon="1.9854">
+  <name>AUDI AIR</name>
+  <desc>Bel-Air, Castelnaudary, Occitanie, FR</desc>
+</wpt>
+<wpt lat="-32.804592" lon="-56.028786">
+  <name>Uruguay</name>
+  <desc>UY</desc>
+</wpt>
+<wpt lat="64.69145" lon="-147.08684">
+  <name>AURORA AIR</name>
+  <desc>Aurora Drive, Eielson Air Force Base, AK, US</desc>
+</wpt>
+<wpt lat="43.437222" lon="0.271667">
+  <name>AUSA</name>
+  <desc>Aux-Aussat, Gers, FR</desc>
+</wpt>
+<wpt lat="42.65981" lon="2.94343">
+  <name>AVIANCA</name>
+  <desc>Lotissement Avianca, Saleilles, Occitanie, FR</desc>
+</wpt>
+<wpt lat="37.852059" lon="-122.03369">
+  <name>ALAMO</name>
+  <desc>Alamo, Contra Costa County, CA, US</desc>
+</wpt>
+<wpt lat="11.9159" lon="42.419399">
+  <name>Djibouti</name>
+  <desc>DJ</desc>
+</wpt>
+<wpt lat="47.62553" lon="5.78387">
+  <name>AVEMEX</name>
+  <desc>Rue Mex Robin, Lavoncourt, Bourgogne-Franche-Comté, FR</desc>
+</wpt>
+<wpt lat="-15.4351" lon="166.792206">
+  <name>Vanuatu</name>
+  <desc>VU</desc>
+</wpt>
+<wpt lat="30.30798" lon="-81.45129">
+  <name>AQUILINE</name>
+  <desc>Aquiline Road, Jacksonville, FL, US</desc>
+</wpt>
+<wpt lat="-3.60284" lon="139.88513">
+  <name>ACTIVE AERO</name>
+  <desc>Aero, Papua, ID</desc>
+</wpt>
+<wpt lat="24.2887" lon="90.0438">
+  <name>Bangladesh</name>
+  <desc>BD</desc>
+</wpt>
+<wpt lat="32.638481" lon="-83.426574">
+  <name>Georgia</name>
+  <desc>GA, US</desc>
+</wpt>
+<wpt lat="13.724752" lon="-88.870277">
+  <name>El Salvador</name>
+  <desc>SV</desc>
+</wpt>
+<wpt lat="23.118525" lon="-82.394307">
+  <name>AEROVARADERO</name>
+  <desc>Lombillo, Plaza de la Revolución, Havana, CU</desc>
+</wpt>
+<wpt lat="29.84225" lon="-95.35173">
+  <name>AIRNAT</name>
+  <desc>Firnat Street, Houston, TX, US</desc>
+</wpt>
+<wpt lat="18.1989" lon="7.6835">
+  <name>Niger</name>
+  <desc>NE</desc>
+</wpt>
+<wpt lat="32.363876" lon="37.794193">
+  <name>Jordan</name>
+  <desc>JO</desc>
+</wpt>
+<wpt lat="45.85293" lon="-92.95511">
+  <name>AIRWAVE</name>
+  <desc>Airwaves Road Northeast, Pine City, MN, US</desc>
+</wpt>
+<wpt lat="39.054898" lon="-84.637829">
+  <name>AEROWEE</name>
+  <desc>[3400 - 3499] Aeronea, Erlanger, Kenton, KY, US</desc>
+</wpt>
+<wpt lat="39.53567" lon="-76.34847">
+  <name>AIR FREIGHTER</name>
+  <desc>Bel Air, MD, US</desc>
+</wpt>
+<wpt lat="2.5961" lon="112.883904">
+  <name>Malaysia</name>
+  <desc>MY</desc>
+</wpt>
+<wpt lat="45.94663" lon="-0.16991">
+  <name>RENTAXEL</name>
+  <desc>Rue de la Rentabel, Fontaine-Chalendray, Nouvelle-Aquitaine, FR</desc>
+</wpt>
+<wpt lat="41.602684" lon="21.70779">
+  <name>Macedonia</name>
+  <desc>MK</desc>
+</wpt>
+<wpt lat="38.71884" lon="-77.49757">
+  <name>AIRMAN</name>
+  <desc>Airman Avenue, Buckhall, VA, US</desc>
+</wpt>
+<wpt lat="-27.58885" lon="-48.6037">
+  <name>ATLANTIC NICARAGUA</name>
+  <desc>Rua Nicarágua, Florianópolis, Santa Catarina, BR</desc>
+</wpt>
+<wpt lat="-33.44662" lon="-70.75689">
+  <name>AZIMUT</name>
+  <desc>Calle Azimut, Santiago, Metropolitana de Santiago, CL</desc>
+</wpt>
+<wpt lat="-19.4471" lon="29.815201">
+  <name>Zimbabwe</name>
+  <desc>ZW</desc>
+</wpt>
+<wpt lat="39.390897" lon="-99.066067">
+  <name>ARIZAIR</name>
+  <desc>US</desc>
+</wpt>
+<wpt lat="33.9417" lon="35.923901">
+  <name>Lebanon</name>
+  <desc>LB</desc>
+</wpt>
+<wpt lat="14.642516" lon="-90.513138">
+  <name>Guatemala</name>
+  <desc>Guatemala City, GUATEMALA, GT</desc>
+</wpt>
+<wpt lat="26.066799" lon="50.511398">
+  <name>Bahrain</name>
+  <desc>BH</desc>
+</wpt>
+<wpt lat="13.167446" lon="-59.555202">
+  <name>Barbados</name>
+  <desc>BB</desc>
+</wpt>
+<wpt lat="-23.816299" lon="24.010799">
+  <name>Botswana</name>
+  <desc>BW</desc>
+</wpt>
+<wpt lat="-17.651199" lon="-149.546295">
+  <name>French Polynesia</name>
+  <desc>PF</desc>
+</wpt>
+<wpt lat="65.067703" lon="116.8564">
+  <name>Russian Federation</name>
+  <desc>RU</desc>
+</wpt>
+<wpt lat="33.0" lon="100.0">
+  <name>China</name>
+  <desc>CN</desc>
+</wpt>
+<wpt lat="17.25" lon="-88.166667">
+  <name>Belize</name>
+  <desc>BELIZE DISTRICT, BZ</desc>
+</wpt>
+<wpt lat="-17.836901" lon="35.421398">
+  <name>Mozambique</name>
+  <desc>MZ</desc>
+</wpt>
+<wpt lat="7.1482" lon="171.037399">
+  <name>Marshall Islands</name>
+  <desc>MH</desc>
+</wpt>
+<wpt lat="36.775348" lon="3.060066">
+  <name>Algeria</name>
+  <desc>Algiers, WILAYA ALGER, DZ</desc>
+</wpt>
+<wpt lat="8.3739" lon="39.0588">
+  <name>Ethiopia</name>
+  <desc>ET</desc>
+</wpt>
+<wpt lat="39.49719" lon="-76.32835">
+  <name>Air S</name>
+  <desc>Bel Air South Parkway, Bel Air South, MD, US</desc>
+</wpt>
+<wpt lat="-17.850599" lon="177.776901">
+  <name>Fiji</name>
+  <desc>FJ</desc>
+</wpt>
+<wpt lat="16.819201" lon="-3.6522">
+  <name>Mali</name>
+  <desc>ML</desc>
+</wpt>
+<wpt lat="62.139046" lon="-7.006846">
+  <name>Faroe Islands</name>
+  <desc>FO</desc>
+</wpt>
+<wpt lat="20.544201" lon="-10.7954">
+  <name>Mauritania</name>
+  <desc>MR</desc>
+</wpt>
+<wpt lat="6.3804" lon="12.8155">
+  <name>Cameroon</name>
+  <desc>CM</desc>
+</wpt>
+<wpt lat="10.4559" lon="-11.1874">
+  <name>Guinea</name>
+  <desc>GN</desc>
+</wpt>
+<wpt lat="53.542892" lon="28.05398">
+  <name>Belarus</name>
+  <desc>BY</desc>
+</wpt>
+<wpt lat="4.003988" lon="-52.999998">
+  <name>French Guiana</name>
+  <desc>FRENCH GUIANA, GF</desc>
+</wpt>
+<wpt lat="18.932878" lon="-72.671188">
+  <name>Haiti</name>
+  <desc>HT</desc>
+</wpt>
+<wpt lat="-11.6474" lon="43.297699">
+  <name>Comoros</name>
+  <desc>KM</desc>
+</wpt>
+<wpt lat="14.818892" lon="-86.600739">
+  <name>Honduras</name>
+  <desc>HN</desc>
+</wpt>
+<wpt lat="61.299999" lon="9.255">
+  <name>Norway</name>
+  <desc>NO</desc>
+</wpt>
+<wpt lat="21.894199" lon="96.0317">
+  <name>Myanmar</name>
+  <desc>MM</desc>
+</wpt>
+<wpt lat="40.534302" lon="127.222504">
+  <name>Democratic People's Republic of Korea</name>
+  <desc>KP</desc>
+</wpt>
+<wpt lat="-20.2833" lon="57.549999">
+  <name>Mauritius</name>
+  <desc>MU</desc>
+</wpt>
+<wpt lat="-18.891399" lon="46.482101">
+  <name>Madagascar</name>
+  <desc>MG</desc>
+</wpt>
+<wpt lat="45.8876" lon="101.624496">
+  <name>Mongolia</name>
+  <desc>MN</desc>
+</wpt>
+<wpt lat="-3.3949" lon="29.6717">
+  <name>Burundi</name>
+  <desc>BI</desc>
+</wpt>
+<wpt lat="7.3434" lon="80.719398">
+  <name>Sri Lanka</name>
+  <desc>LK</desc>
+</wpt>
+<wpt lat="45.843193" lon="24.986855">
+  <name>Romania</name>
+  <desc>RO</desc>
+</wpt>
+<wpt lat="-0.2396" lon="15.3028">
+  <name>Republic of the Congo</name>
+  <desc>CG</desc>
+</wpt>
+<wpt lat="-1.9519" lon="30.059601">
+  <name>Rwanda</name>
+  <desc>RW</desc>
+</wpt>
+<wpt lat="12.839902" lon="-85.033455">
+  <name>Nicaragua</name>
+  <desc>NI</desc>
+</wpt>
+<wpt lat="21.802452" lon="-71.749626">
+  <name>Turks and Caicos Islands</name>
+  <desc>TC</desc>
+</wpt>
+<wpt lat="24.695328" lon="-78.050987">
+  <name>Bahamas</name>
+  <desc>BS</desc>
+</wpt>
+<wpt lat="4.131437" lon="-55.920311">
+  <name>Suriname</name>
+  <desc>SR</desc>
+</wpt>
+<wpt lat="35.880001" lon="38.364201">
+  <name>Syrian Arab Republic</name>
+  <desc>SY</desc>
+</wpt>
+<wpt lat="48.80624" lon="2.50042">
+  <name>AIR-MAUR</name>
+  <desc>Avenue du Bel-Air, Saint-Maur-des-Fossés, Île-de-France, FR</desc>
+</wpt>
+<wpt lat="16.0" lon="-24.0">
+  <name>Cape Verde</name>
+  <desc>CV</desc>
+</wpt>
+<wpt lat="35.819745" lon="-95.679829">
+  <name>1 Canada</name>
+  <desc>[101 - 199] Canada, Haskell, Muskogee, OK, US</desc>
+</wpt>
+<wpt lat="49.611277" lon="6.129799">
+  <name>Luxembourg</name>
+  <desc>Luxembourg, Luxembourg, LU</desc>
+</wpt>
+<wpt lat="20.495001" lon="55.592899">
+  <name>Oman</name>
+  <desc>OM</desc>
+</wpt>
+<wpt lat="17.07753" lon="-61.800068">
+  <name>Antigua and Barbuda</name>
+  <desc>AG</desc>
+</wpt>
+<wpt lat="10.418848" lon="-61.293797">
+  <name>Trinidad and Tobago</name>
+  <desc>TT</desc>
+</wpt>
+<wpt lat="22.29362" lon="114.17533">
+  <name>Hong Kong SAR of China</name>
+  <desc>Avenue Of Stars, Hong Kong, Hong Kong, HK</desc>
+</wpt>
+<wpt lat="19.319361" lon="-81.253677">
+  <name>Cayman Islands</name>
+  <desc>KY</desc>
+</wpt>
+<wpt lat="6.1428" lon="20.399599">
+  <name>Central African Republic</name>
+  <desc>CF</desc>
+</wpt>
+<wpt lat="9.00699" lon="38.7697">
+  <name>Democratic Republic of Congo</name>
+  <desc>Democratic Republic of Congo Street, Addis Ababa, Addis Ababa, ET</desc>
+</wpt>
+<wpt lat="52.121216" lon="19.408318">
+  <name>Poland</name>
+  <desc>PL</desc>
+</wpt>
+<wpt lat="25.99315" lon="-80.20673">
+  <name>7 United States</name>
+  <desc>7 South State Road 7, West Park, FL, US</desc>
+</wpt>
+<wpt lat="23.534" lon="120.559402">
+  <name>Taiwan</name>
+  <desc>TW</desc>
+</wpt>
+<wpt lat="40.952429" lon="-73.089435">
+  <name>1 China</name>
+  <desc>1 China Ln, Setauket, Suffolk, NY, US</desc>
+</wpt>
+<wpt lat="43.798882" lon="-1.303052">
+  <name>ASUR</name>
+  <desc>Azur, Landes, FR</desc>
+</wpt>
+<wpt lat="-25.296141" lon="-57.630913">
+  <name>Paraguay</name>
+  <desc>Asuncion, ASUNCIÓN CAPITAL DISTRICT, PY</desc>
+</wpt>
+<wpt lat="21.610159" lon="-78.928322">
+  <name>Cuba</name>
+  <desc>CU</desc>
+</wpt>
+<wpt lat="39.785801" lon="-109.0728">
+  <name>DRAGON</name>
+  <desc>Dragon, Uintah County, UT, US</desc>
+</wpt>
+<wpt lat="27.339199" lon="90.4375">
+  <name>Bhutan</name>
+  <desc>BT</desc>
+</wpt>
+<wpt lat="1.4777" lon="10.375">
+  <name>Equatorial Guinea</name>
+  <desc>GQ</desc>
+</wpt>
+<wpt lat="41.846208" lon="-71.431912">
+  <name>9 Italy</name>
+  <desc>9 Italy St, Providence, Providence, RI, US</desc>
+</wpt>
+<wpt lat="30.57017" lon="-91.4691">
+  <name>UNIFORM OSCAR</name>
+  <desc>Oscar, LA, US</desc>
+</wpt>
+<wpt lat="65.067703" lon="116.8564">
+  <name>Russia]]</name>
+  <desc>RU</desc>
+</wpt>
+<wpt lat="15.3316" lon="38.923599">
+  <name>Eritrea</name>
+  <desc>ER</desc>
+</wpt>
+<wpt lat="41.29806" lon="-86.62034">
+  <name>8 United States</name>
+  <desc>8 North Heaton Street, Knox, IN, US</desc>
+</wpt>
+<wpt lat="33.962601" lon="9.5798">
+  <name>Tunisia</name>
+  <desc>TN</desc>
+</wpt>
+<wpt lat="50.879923" lon="7.095074">
+  <name>7 Germany</name>
+  <desc>Porz, NORTH RHINE-WESTPHALIA, DE</desc>
+</wpt>
+<wpt lat="9.970512" lon="-84.196793">
+  <name>Costa Rica</name>
+  <desc>CR</desc>
+</wpt>
+<wpt lat="39.956212" lon="-74.257281">
+  <name>8 Haiti</name>
+  <desc>8 Haiti Ct, Toms River, Ocean, NJ, US</desc>
+</wpt>
+<wpt lat="13.894094" lon="-60.965061">
+  <name>Saint Lucia</name>
+  <desc>LC</desc>
+</wpt>
+<wpt lat="43.731142" lon="7.419758">
+  <name>Monaco</name>
+  <desc>Monaco, MC</desc>
+</wpt>
+<wpt lat="-9.6438" lon="159.974106">
+  <name>Solomon Islands</name>
+  <desc>SB</desc>
+</wpt>
+<wpt lat="39.53567" lon="-76.34847">
+  <name>ALDAWLYH AIR</name>
+  <desc>Bel Air, MD, US</desc>
+</wpt>
+<wpt lat="32.885899" lon="43.609299">
+  <name>Iraq</name>
+  <desc>IQ</desc>
+</wpt>
+<wpt lat="14.66647" lon="121.10946">
+  <name>6 Japan</name>
+  <desc>Japan 6, Marikina City, National Capital Region, PH</desc>
+</wpt>
+<wpt lat="29.3295" lon="47.683102">
+  <name>Kuwait</name>
+  <desc>KW</desc>
+</wpt>
+<wpt lat="38.61714" lon="-89.05267">
+  <name>ODINN</name>
+  <desc>Odin, IL, US</desc>
+</wpt>
+<wpt lat="-26.0322" lon="27.91803">
+  <name>6 Kyrgyzstan</name>
+  <desc>Kyrgyzstan Crescent 6, Randburg, Gauteng, ZA</desc>
+</wpt>
+<wpt lat="39.694698" lon="-78.846901">
+  <name>LAP</name>
+  <desc>Lap, Allegany County, MD, US</desc>
+</wpt>
+<wpt lat="18.3468" lon="103.781601">
+  <name>Lao Peoples Democratic Republic</name>
+  <desc>LA</desc>
+</wpt>
+<wpt lat="32.333302" lon="-64.75">
+  <name>Bermuda</name>
+  <desc>BM</desc>
+</wpt>
+<wpt lat="41.7634" lon="-78.03639">
+  <name>6 United States</name>
+  <desc>6 Route 6 West, Coudersport, PA, US</desc>
+</wpt>
+<wpt lat="42.03789" lon="-89.78268">
+  <name>WATCHDOG</name>
+  <desc>Watchdog Road, IL, US</desc>
+</wpt>
+<wpt lat="16.735834" lon="-62.192696">
+  <name>Montserrat</name>
+  <desc>MS</desc>
+</wpt>
+<wpt lat="-0.5334" lon="166.9086">
+  <name>Nauru</name>
+  <desc>NR</desc>
+</wpt>
+<wpt lat="24.639299" lon="46.686401">
+  <name>Saudi Arabia</name>
+  <desc>SA</desc>
+</wpt>
+<wpt lat="7.5216" lon="134.530807">
+  <name>Palau</name>
+  <desc>PW, US</desc>
+</wpt>
+<wpt lat="-21.149" lon="-175.319595">
+  <name>Tonga</name>
+  <desc>TO</desc>
+</wpt>
+<wpt lat="52.532161" lon="13.511893">
+  <name>11 Germany</name>
+  <desc>Lichtenberg, BERLIN, DE</desc>
+</wpt>
+<wpt lat="-13.5945" lon="-172.611298">
+  <name>Samoa</name>
+  <desc>WS</desc>
+</wpt>
+<wpt lat="25.349701" lon="51.011902">
+  <name>Qatar</name>
+  <desc>QA</desc>
+</wpt>
+<wpt lat="51.50015" lon="-0.12624">
+  <name>1 United Kingdom</name>
+  <desc>GB</desc>
+</wpt>
+<wpt lat="54.0" lon="-2.0">
+  <name>UNited Kingdom</name>
+  <desc>GB</desc>
+</wpt>
+<wpt lat="53.91594" lon="-1.31939">
+  <name>6 United Kingdom</name>
+  <desc>Street 6, Wetherby, ENG, GB</desc>
+</wpt>
+<wpt lat="14.47788" lon="121.03416">
+  <name>Netherland</name>
+  <desc>Netherland, Parañaque City, National Capital Region, PH</desc>
+</wpt>
+<wpt lat="4.799234" lon="-58.981483">
+  <name>Guyana</name>
+  <desc>GY</desc>
+</wpt>
+<wpt lat="-21.231001" lon="-159.812195">
+  <name>Cook Islands</name>
+  <desc>CK</desc>
+</wpt>
+<wpt lat="4.5409" lon="114.719101">
+  <name>Brunei</name>
+  <desc>BN</desc>
+</wpt>
+<wpt lat="-37.7455" lon="145.33844">
+  <name>9 Russia</name>
+  <desc>9 Russia Mews, Melbourne, Victoria, AU</desc>
+</wpt>
+<wpt lat="39.87901" lon="-89.19912">
+  <name>ACOM</name>
+  <desc>Acom Road, IL, US</desc>
+</wpt>
+<wpt lat="32.67021" lon="-97.19254">
+  <name>Boonville Stage Line</name>
+  <desc>Stage Line Drive, Arlington, TX, US</desc>
+</wpt>
+<wpt lat="13.246317" lon="-61.19014">
+  <name>Saint Vincent and the Grenadines</name>
+  <desc>VC</desc>
+</wpt>
+<wpt lat="39.390897" lon="-99.066067">
+  <name>SWISSBIRD</name>
+  <desc>US</desc>
+</wpt>
+<wpt lat="14.6742" lon="45.5858">
+  <name>Yemen</name>
+  <desc>YE</desc>
+</wpt>
+<wpt lat="45.728327" lon="-74.485299">
+  <name>6 China</name>
+  <desc>6 Ch Édina, Brownsburg-Chatham, Argenteuil, QC, CA</desc>
+</wpt>
+<wpt lat="38.431499" lon="70.903503">
+  <name>Tajikistan</name>
+  <desc>TJ</desc>
+</wpt>
+<wpt lat="52.249835" lon="10.59242">
+  <name>AEROSOL</name>
+  <desc>58k Helmstedter Straße, Cremlingen, Brunswick, Lower Saxony, DE</desc>
+</wpt>
+<wpt lat="17.340164" lon="-62.766689">
+  <name>Saint Kitts and Nevis</name>
+  <desc>KN</desc>
+</wpt>
+<wpt lat="41.716127" lon="21.780874">
+  <name>VELES</name>
+  <desc>Veles, MK</desc>
+</wpt>
+<wpt lat="7.6869" lon="-5.6958">
+  <name>Cote d'Ivoire</name>
+  <desc>CI</desc>
+</wpt>
+<wpt lat="21.894199" lon="96.0317">
+  <name>Burma</name>
+  <desc>MM</desc>
+</wpt>
+<wpt lat="36.635601" lon="127.500603">
+  <name>South Korea</name>
+  <desc>KR</desc>
+</wpt>
+<wpt lat="16.249007" lon="-61.565044">
+  <name>Guadeloupe</name>
+  <desc>GUADELOUPE, GP</desc>
+</wpt>
+<wpt lat="-0.6818" lon="25.458599">
+  <name>Congo (Kinshasa)</name>
+  <desc>CD</desc>
+</wpt>
+<wpt lat="35.880001" lon="38.364201">
+  <name>Syria</name>
+  <desc>SY</desc>
+</wpt>
+<wpt lat="-14.293662" lon="-170.698357">
+  <name>American Samoa</name>
+  <desc>AS</desc>
+</wpt>
+<wpt lat="18.429138" lon="-64.62886">
+  <name>British Virgin Islands</name>
+  <desc>VG</desc>
+</wpt>
+<wpt lat="18.215692" lon="-66.414655">
+  <name>Puerto Rico</name>
+  <desc>PR, US</desc>
+</wpt>
+<wpt lat="-0.2396" lon="15.3028">
+  <name>Congo (Brazzaville)</name>
+  <desc>CG</desc>
+</wpt>
+</gpx>

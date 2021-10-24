@@ -1,5 +1,18 @@
 // import { isoCountries, degrees_to_radians } from './utils'
 
+const generateRandomLocation = () => {
+    const randNum = (min, max) => {
+        return min + Math.random() * (max + 1 - min);
+    };
+
+    return Object.values({
+        lon: randNum(34.57149, 35.57212),
+        lat: randNum(29.55805, 33.207033)
+        // lon: randNum(-180, 180),
+        // lat: randNum(-90, 90)
+    })
+}
+
 
 function degrees_to_radians(degrees) {
     var pi = Math.PI;
@@ -11,6 +24,153 @@ function degrees_to_radians(degrees) {
 // console.log(isoCountries['israel']);
 // const flagSrc = "http://purecatamphetamine.github.io/country-flag-icons/3x2/#isoCountry#.svg"
 
+
+
+var gpxFormat = new ol.format.GPX();
+var gpxFeatures;
+function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+    debugger
+    // files is a FileList of File objects. List some properties.
+    var output = [];
+    for (var i = 0, f; f = files[i]; i++) {
+        console.log("files[i]", files[i]);
+        var reader = new FileReader();
+        reader.readAsText(files[i], "UTF-8");
+        reader.onload = function (evt) {
+            console.log(evt.target.result);
+            gpxFeatures = gpxFormat.readFeatures(evt.target.result, {
+                dataProjection: 'EPSG:4326',
+                featureProjection: 'EPSG:3857'
+            });
+            gpxLayer.getSource().addFeatures(gpxFeatures);
+            console.log("gpxFeatures", gpxFeatures)
+        }
+        output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
+            f.size, ' bytes, last modified: ',
+            f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
+            '</li>');
+    }
+    document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
+}
+
+
+// var defaultStyle = {
+//     'Point': new ol.style.Style({
+//         image: new ol.style.Circle({
+//             fill: new ol.style.Fill({
+//                 color: 'rgba(255,255,0,0.5)'
+//             }),
+//             radius: 5,
+//             stroke: new ol.style.Stroke({
+//                 color: '#ff0',
+//                 width: 1
+//             })
+//         })
+//     }),
+//     'LineString': new ol.style.Style({
+//         stroke: new ol.style.Stroke({
+//             color: '#f00',
+//             width: 3
+//         })
+//     }),
+//     'Polygon': new ol.style.Style({
+//         fill: new ol.style.Fill({
+//             color: 'rgba(0,255,255,0.5)'
+//         }),
+//         stroke: new ol.style.Stroke({
+//             color: '#0ff',
+//             width: 1
+//         })
+//     }),
+//     'MultiPoint': new ol.style.Style({
+//         image: new ol.style.Circle({
+//             fill: new ol.style.Fill({
+//                 color: 'rgba(255,0,255,0.5)'
+//             }),
+//             radius: 5,
+//             stroke: new ol.style.Stroke({
+//                 color: '#f0f',
+//                 width: 1
+//             })
+//         })
+//     }),
+//     'MultiLineString': new ol.style.Style({
+//         stroke: new ol.style.Stroke({
+//             color: '#0f0',
+//             width: 3
+//         })
+//     }),
+//     'MultiPolygon': new ol.style.Style({
+//         fill: new ol.style.Fill({
+//             color: 'rgba(0,0,255,0.5)'
+//         }),
+//         stroke: new ol.style.Stroke({
+//             color: '#00f',
+//             width: 1
+//         })
+//     })
+// };
+
+var style = {
+    'Point': [new ol.style.Style({
+        image: new ol.style.Circle({
+            fill: new ol.style.Fill({
+                color: 'rgba(255,255,0,0.4)'
+            }),
+            radius: 5,
+            stroke: new ol.style.Stroke({
+                color: '#ff0',
+                width: 1
+            })
+        })
+    })],
+    'LineString': [new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: '#f00',
+            width: 3
+        })
+    })],
+    'MultiLineString': [new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: '#0f0',
+            width: 3
+        })
+    })]
+};
+var styleFunction = function (feature, resolution) {
+    var featureStyleFunction = feature.getStyleFunction();
+    if (featureStyleFunction) {
+        return featureStyleFunction.call(feature, resolution);
+    } else {
+        return defaultStyle[feature.getGeometry().getType()];
+    }
+};
+
+var gpxLayer = new ol.layer.Vector({
+    source: new ol.source.Vector({
+        // url: './20210222011116-27005-data.gpx',
+        url: 'https://openlayers.org/en/v4.6.5/examples/data/gpx/fells_loop.gpx',
+        format: new ol.format.GPX()
+    }),
+    // style: styleFunction
+    style: function (feature, resolution) {
+        return style[feature.getGeometry().getType()];
+    }
+});
+
+debugger
+console.log(gpxLayer);
+
+// var vector = new ol.layer.Vector({
+//     source: new ol.source.Vector({
+//       url: 'data/gpx/fells_loop.gpx',
+//       format: new ol.format.GPX()
+//     }),
+//     style: function(feature, resolution) {
+//       return style[feature.getGeometry().getType()];
+//     }
+//   });
 
 /****************************************/
 /*            Basic Map                 */
@@ -40,13 +200,13 @@ const map = new ol.Map({
     }),
     layers: [
         new ol.layer.Tile({
-            // source: new OSM() //original map
-            source: new ol.source.XYZ({
-                attributions: attributions,
-                url: 'https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=' + key,
-                tileSize: 512,
-            }),
-        }), mapVectorLayer],
+            source: new ol.source.OSM() //original map
+            // source: new ol.source.XYZ({
+            //     attributions: attributions,
+            //     url: 'https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=' + key,
+            //     tileSize: 512,
+            // }),
+        }), mapVectorLayer, gpxLayer],
 });
 
 
@@ -72,6 +232,7 @@ startMarker.setStyle(new ol.style.Style({
         // src: getUnicodeFlagIcon('US'),
         // src: './images/israelIcon.png',
         src: 'https://openlayers.org/en/v4.6.5/examples/data/icon.png'
+        // data/kml/2012_Earthquakes_Mag5.kml
     }),
     text: new ol.style.Text({
         font: '15px Narkisim, bold',
@@ -82,7 +243,7 @@ startMarker.setStyle(new ol.style.Style({
         })
     }),
 }))
-mapVectorSource.addFeature(startMarker);
+// mapVectorSource.addFeature(startMarker);
 
 
 
@@ -189,8 +350,8 @@ function requestForIsraelAirplanes() {
             if (request.status === 200) {
                 // console.log(request.response)
                 request.response.states.forEach((el) => {
-                    if (el[2] === "Israel" && !mapVectorSource.getFeatureById(parseInt(el[0]))) {//} && flagOneAirplane) {
-                        // if (!mapVectorSource.getFeatureById(el[0])) {
+                    // if (el[2] === "Israel" && !mapVectorSource.getFeatureById(parseInt(el[0]))) {//} && flagOneAirplane) {
+                    if (!mapVectorSource.getFeatureById(el[0])) {
                         console.log(el);
 
 
@@ -221,6 +382,86 @@ function requestForIsraelAirplanes() {
     request.send(null);
 }
 
-setInterval(requestForIsraelAirplanes, 10000);
+// setInterval(requestForIsraelAirplanes, 10000);
 
 // requestForIsraelAirplanes();
+///////////////////////////////////////////////////////////////////////////
+var displayFeatureInfo = function (pixel) {
+    var features = [];
+    map.forEachFeatureAtPixel(pixel, function (feature, layer) {
+        features.push(feature);
+        feature && console.log("value: ", feature.value)
+    });
+    if (features.length > 0) {
+        var info = [];
+        var i, ii;
+        for (i = 0, ii = features.length; i < ii; ++i) {
+            info.push(features[i].get('desc'));
+        }
+        // document.getElementById('info').innerHTML = info.join(', ') || '(unknown)';
+        map.getTarget().style.cursor = 'pointer';
+    } else {
+        // document.getElementById('info').innerHTML = '&nbsp;';
+        map.getTarget().style.cursor = '';
+    }
+};
+
+map.on('pointermove', function (evt) {
+    if (evt.dragging) {
+        return;
+    }
+    var pixel = map.getEventPixel(evt.originalEvent);
+    displayFeatureInfo(pixel);
+});
+
+map.on('click', function (evt) {
+    displayFeatureInfo(evt.pixel);
+});
+
+
+
+const heatmapLayer = new ol.source.Vector({});
+const createListOfPoints = () => {
+    // let listOfPoints;
+
+
+    for (let i = 0; i < 15; i++) {
+        const feature = new ol.Feature({
+            geometry: new ol.geom.Point(generateRandomLocation()),
+        })
+        i ? feature.value = i : feature.value = null;
+        // console.log(feature.)
+        heatmapLayer.addFeature(feature)
+        // listOfPoints.push()
+    }
+}
+
+
+
+const vectorHeatMap = new ol.layer.Heatmap({
+    // source: new ol.source.Vector({
+    //     url: 'https://openlayers.org/en/v4.6.5/examples/data/kml/2012_Earthquakes_Mag5.kml',
+    //     format: new ol.format.KML({
+    //         extractStyles: false,
+    //     }),
+    // }),
+    source: heatmapLayer,
+    blur: 15,
+    radius: 25,
+    weight: function (feature) {
+        // console.log(feature.value)
+        // return feature.value * 0.1;
+        console.log(feature.value ?? 15)
+        return feature.value ?? 1;
+    }
+});
+
+map.addLayer(vectorHeatMap);
+//   const raster = new TileLayer({
+//     source: new Stamen({
+//       layer: 'toner',
+//     }),
+//   });
+
+
+createListOfPoints()
